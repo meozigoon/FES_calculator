@@ -59,7 +59,6 @@
             button24 = new Button();
             button25 = new Button();
             button27 = new Button();
-            button28 = new Button();
             button29 = new Button();
             button30 = new Button();
             button31 = new Button();
@@ -74,6 +73,7 @@
             button39 = new Button();
             button40 = new Button();
             toolTip1 = new ToolTip(components);
+            button41 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -571,9 +571,9 @@
             // label2
             // 
             label2.Font = new Font("Britannic Bold", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(108, 98);
+            label2.Location = new Point(204, 98);
             label2.Name = "label2";
-            label2.Size = new Size(640, 35);
+            label2.Size = new Size(544, 35);
             label2.TabIndex = 24;
             label2.Text = "label2";
             label2.TextAlign = ContentAlignment.MiddleRight;
@@ -651,7 +651,7 @@
             button27.FlatStyle = FlatStyle.Flat;
             button27.Font = new Font("배달의민족 한나체 Pro", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
             button27.ForeColor = SystemColors.Control;
-            button27.Location = new Point(687, 404);
+            button27.Location = new Point(685, 340);
             button27.Margin = new Padding(4, 3, 4, 3);
             button27.Name = "button27";
             button27.Size = new Size(72, 58);
@@ -660,26 +660,6 @@
             button27.UseVisualStyleBackColor = false;
             button27.Click += button27_Click;
             button27.KeyPress += button27_KeyPress;
-            // 
-            // button28
-            // 
-            button28.BackColor = Color.FromArgb(64, 64, 64);
-            button28.Cursor = Cursors.Hand;
-            button28.FlatAppearance.BorderColor = SystemColors.WindowFrame;
-            button28.FlatAppearance.MouseDownBackColor = Color.Gray;
-            button28.FlatAppearance.MouseOverBackColor = Color.Gray;
-            button28.FlatStyle = FlatStyle.Flat;
-            button28.Font = new Font("배달의민족 한나체 Pro", 9.999999F, FontStyle.Regular, GraphicsUnit.Point);
-            button28.ForeColor = SystemColors.Control;
-            button28.Location = new Point(687, 148);
-            button28.Margin = new Padding(4, 3, 4, 3);
-            button28.Name = "button28";
-            button28.Size = new Size(72, 58);
-            button28.TabIndex = 30;
-            button28.Text = "소수  판정";
-            button28.UseVisualStyleBackColor = false;
-            button28.Click += button28_Click;
-            button28.KeyPress += button28_KeyPress;
             // 
             // button29
             // 
@@ -691,7 +671,7 @@
             button29.FlatStyle = FlatStyle.Flat;
             button29.Font = new Font("배달의민족 한나체 Pro", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
             button29.ForeColor = SystemColors.Control;
-            button29.Location = new Point(687, 212);
+            button29.Location = new Point(685, 148);
             button29.Margin = new Padding(4, 3, 4, 3);
             button29.Name = "button29";
             button29.Size = new Size(72, 58);
@@ -731,7 +711,7 @@
             button31.FlatStyle = FlatStyle.Flat;
             button31.Font = new Font("배달의민족 한나체 Pro", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
             button31.ForeColor = SystemColors.Control;
-            button31.Location = new Point(687, 341);
+            button31.Location = new Point(685, 277);
             button31.Margin = new Padding(4, 3, 4, 3);
             button31.Name = "button31";
             button31.Size = new Size(72, 58);
@@ -751,7 +731,7 @@
             button26.FlatStyle = FlatStyle.Flat;
             button26.Font = new Font("배달의민족 한나체 Pro", 9.999999F, FontStyle.Regular, GraphicsUnit.Point);
             button26.ForeColor = SystemColors.Control;
-            button26.Location = new Point(687, 276);
+            button26.Location = new Point(685, 212);
             button26.Margin = new Padding(4, 3, 4, 3);
             button26.Name = "button26";
             button26.Size = new Size(72, 58);
@@ -945,12 +925,32 @@
             button40.UseVisualStyleBackColor = false;
             button40.Click += button40_Click;
             // 
+            // button41
+            // 
+            button41.BackColor = Color.FromArgb(64, 64, 64);
+            button41.Cursor = Cursors.Hand;
+            button41.FlatAppearance.BorderColor = SystemColors.WindowFrame;
+            button41.FlatAppearance.MouseDownBackColor = Color.Gray;
+            button41.FlatAppearance.MouseOverBackColor = Color.Gray;
+            button41.FlatStyle = FlatStyle.Flat;
+            button41.Font = new Font("배달의민족 한나체 Pro", 8.999999F, FontStyle.Regular, GraphicsUnit.Point);
+            button41.ForeColor = SystemColors.Control;
+            button41.Location = new Point(685, 404);
+            button41.Margin = new Padding(4, 3, 4, 3);
+            button41.Name = "button41";
+            button41.Size = new Size(72, 58);
+            button41.TabIndex = 45;
+            button41.Text = "그래프계산기";
+            button41.UseVisualStyleBackColor = false;
+            button41.Click += button41_Click;
+            // 
             // Calculator
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(772, 478);
+            ClientSize = new Size(766, 476);
+            Controls.Add(button41);
             Controls.Add(button40);
             Controls.Add(button39);
             Controls.Add(button38);
@@ -964,7 +964,6 @@
             Controls.Add(button31);
             Controls.Add(button30);
             Controls.Add(button29);
-            Controls.Add(button28);
             Controls.Add(button27);
             Controls.Add(button25);
             Controls.Add(button24);
@@ -1035,7 +1034,6 @@
         private Button button24;
         private Button button25;
         private Button button27;
-        private Button button28;
         private Button button29;
         private Button button30;
         private Button button31;
@@ -1050,5 +1048,6 @@
         private Button button39;
         private Button button40;
         private ToolTip toolTip1;
+        private Button button41;
     }
 }

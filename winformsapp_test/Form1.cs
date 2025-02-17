@@ -229,8 +229,7 @@ namespace winformsapp_test
 
         private void button30_Click(object sender, EventArgs e) // 제작자
         {
-            MessageBox.Show("아이디어 제공: DH.L, MG.K, SH.L\n" +
-                            "프로그램 개발: DH.L\n" +
+            MessageBox.Show("프로그램 개발: DH.L\n" +
                             "아이콘 이미지: 위키피디아\n" +
                             "글꼴: Britannic Bold, 배달의민족 한나체 Pro", "정보", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -983,37 +982,6 @@ namespace winformsapp_test
         }
         #endregion
 
-        private void button28_Click(object sender, EventArgs e) // 소수 판정
-        {
-            if (number == Math.Truncate(number) && number > 0)
-            {
-                if (number == 0)
-                {
-                    MessageBox.Show("0은 자연수가 아닙니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    if (number == Math.Truncate(number))
-                    {
-                        if (IsPrime((BigInteger)number))
-                            MessageBox.Show(String.Format("{0}은(는) 소수입니다.", number), "결과", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        else
-                            MessageBox.Show(String.Format("{0}은(는) 소수가 아닙니다.", number), "결과", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                    else
-                        MessageBox.Show(String.Format("{0}은(는) 자연수가 아닙니다.", number), "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            else if (number < 0)
-            {
-                MessageBox.Show(String.Format("{0}은(는) 음수입니다.", number), "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                MessageBox.Show(String.Format("{0}은(는) 자연수가 아닙니다.", number), "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void button29_Click(object sender, EventArgs e) // 소인수분해
         {
             if (number == Math.Truncate(number) && number > 0)
@@ -1021,6 +989,10 @@ namespace winformsapp_test
                 if (number == 0)
                 {
                     MessageBox.Show("0은 자연수가 아닙니다.", "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (number == 1)
+                {
+                    MessageBox.Show("1 입니다.", "결과", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (IsPrime((BigInteger)number))
                 {
@@ -1065,10 +1037,6 @@ namespace winformsapp_test
                     }
                 }
             }
-            else if (number < 0)
-            {
-                MessageBox.Show(String.Format("{0}은(는) 음수입니다.", number), "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             else
             {
                 MessageBox.Show(String.Format("{0}은(는) 자연수가 아닙니다.", number), "오류", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -1091,6 +1059,12 @@ namespace winformsapp_test
         {
             Form2 showForm2 = new Form2();
             showForm2.Show();
+        }
+
+        private void button41_Click(object sender, EventArgs e) // graph
+        {
+            Form5 showForm5 = new Form5();
+            showForm5.Show();
         }
 
         private void button39_Click(object sender, EventArgs e) // backspace
@@ -1270,11 +1244,6 @@ namespace winformsapp_test
         }
 
         private void button23_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            KeyPressEvent(sender, e);
-        }
-
-        private void button28_KeyPress(object sender, KeyPressEventArgs e)
         {
             KeyPressEvent(sender, e);
         }
