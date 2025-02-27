@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9P/ULFXbR2Y=",
+  "dgSpecHash": "pidFxaagSbw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\이동하\\source\\repos\\C#_계산기calculator\\winformsapp_test\\winformsapp_test\\Calculator.csproj",
+  "projectFilePath": "C:\\Users\\이동하\\source\\repos\\FES_calculator\\winformsapp_test\\Calculator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\이동하\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
     "C:\\Users\\이동하\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",

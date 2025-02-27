@@ -26,22 +26,22 @@ namespace Calculator
             this.drawButton.Click += drawButton_Click;
         }
 
-        private void Form_Load(object sender, EventArgs e) //폼 로드시 처리하기
+        private void Form_Load(object sender, EventArgs e) // 폼 로드시 처리하기
         {
             DrawGraph();
         }
 
-        private void Form_Resize(object sender, EventArgs e) //폼 크기 조정시 처리하기
+        private void Form_Resize(object sender, EventArgs e) // 폼 크기 조정시 처리하기
         {
             DrawGraph();
         }
 
-        private void drawButton_Click(object sender, EventArgs e) //그리기 버튼 클릭시 처리하기
+        private void drawButton_Click(object sender, EventArgs e) // 그리기 버튼 클릭시 처리하기
         {
             DrawGraph();
         }
 
-        private MethodInfo CompileFunction(string equationText) //함수 컴파일하기
+        private MethodInfo CompileFunction(string equationText) // 함수 컴파일하기
         {
             string functionText = "using System;" +
                                   "public static class Evaluator" +
@@ -80,7 +80,7 @@ namespace Calculator
             }
         }
 
-        private float ExecuteGraphFunction(MethodInfo functionMethodInfo/*함수 메소드 정보*/, float x) //그래프 함수 실행하기
+        private float ExecuteGraphFunction(MethodInfo functionMethodInfo/*함수 메소드 정보*/, float x) // 그래프 함수 실행하기
         {
             double result = (double)functionMethodInfo.Invoke(null, new object[] { x });
 
