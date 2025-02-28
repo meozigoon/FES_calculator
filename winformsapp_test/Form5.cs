@@ -21,17 +21,18 @@ namespace Calculator
         {
             InitializeComponent();
             //이벤트 설정
-            Load += Form_Load;
-            Resize += Form_Resize;
-            this.drawButton.Click += drawButton_Click;
+            //Load += Form5_Load;
+            //Resize += Form5_SizeChanged;
+            //this.drawButton.Click += drawButton_Click;
+            DrawGraph();
         }
 
-        private void Form_Load(object sender, EventArgs e) // 폼 로드시 처리하기
+        private void Form5_SizeChanged(object sender, EventArgs e) // 폼 크기 조정시 처리하기
         {
             DrawGraph();
         }
 
-        private void Form_Resize(object sender, EventArgs e) // 폼 크기 조정시 처리하기
+        private void drawButton_Click(object sender, EventArgs e) // 그리기 버튼 클릭시 처리하기
         {
             DrawGraph();
         }
@@ -223,11 +224,6 @@ namespace Calculator
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             T = comboBox1.SelectedItem.ToString();
-            DrawGraph();
-        }
-
-        private void drawButton_Click(object sender, EventArgs e) // 그리기 버튼 눌렀을 때 처리
-        {
             DrawGraph();
         }
     }

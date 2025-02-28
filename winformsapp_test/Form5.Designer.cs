@@ -239,6 +239,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form5";
             Text = "Graph Calculator | 그래프 계산기";
+            SizeChanged += Form5_SizeChanged;
             ((System.ComponentModel.ISupportInitialize)canvasPictureBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
