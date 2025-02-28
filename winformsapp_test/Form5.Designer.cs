@@ -61,6 +61,7 @@
             drawButton.TabIndex = 8;
             drawButton.Text = "그리기";
             drawButton.UseVisualStyleBackColor = false;
+            drawButton.Click += drawButton_Click;
             // 
             // maximumYTextBox
             // 

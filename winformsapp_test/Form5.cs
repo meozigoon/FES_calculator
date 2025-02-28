@@ -36,11 +36,6 @@ namespace Calculator
             DrawGraph();
         }
 
-        private void drawButton_Click(object sender, EventArgs e) // 그리기 버튼 클릭시 처리하기
-        {
-            DrawGraph();
-        }
-
         private MethodInfo CompileFunction(string equationText) // 함수 컴파일하기
         {
             string functionText = "using System;" +
@@ -87,7 +82,7 @@ namespace Calculator
             return (float)result;
         }
 
-        private void DrawGraph() //그래프 그리기
+        private void DrawGraph() // 그래프 그리기
         {
             float minimumX = float.Parse(this.minimumXTextBox.Text);
             float maximumX = float.Parse(this.maximumXTextBox.Text);
@@ -228,6 +223,11 @@ namespace Calculator
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             T = comboBox1.SelectedItem.ToString();
+            DrawGraph();
+        }
+
+        private void drawButton_Click(object sender, EventArgs e) // 그리기 버튼 눌렀을 때 처리
+        {
             DrawGraph();
         }
     }
